@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 900px;
+}
+
+.square {
+    border: 2px solid black;
+}
+
+.square:hover {
+    background-color: red;
+}
