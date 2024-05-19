@@ -2,10 +2,16 @@ const container = document.querySelector(".container");
 const grid = document.querySelector(".grid");
 const reset = document.querySelector(".reset");
 
-let color = "green";
+let color = "brown";
 const erase = document.querySelector(".erase");
 erase.addEventListener("click", () => {
     color = "white";
+});
+
+const random = document.querySelector(".random");
+random.addEventListener("click", () => {
+    let colors = ["red", "blue", "green", "brown", "yellow", "pink", "black", "grey", "turquoise"];
+    color = colors[Math.floor(Math.random() * colors.length)];
 })
 
 function newGrid(gridS) {
