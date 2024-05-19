@@ -26,6 +26,7 @@ function newGrid(gridS) {
 };
 
 grid.addEventListener("click", () => {
+    container.innerHTML = "";
     let gridSize = prompt("Grid size ? ");
     gridSize = parseInt(gridSize);
 
