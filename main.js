@@ -27,3 +27,9 @@ grid.addEventListener("click", () => {
 reset.addEventListener("click", () => {
     container.innerHTML = "";
 });
+
+container.addEventListener("mouseover", (e) => {
+    if (e.target.classList.contains("square")) {
+        e.target.style.backgroundColor = "black";
+    };
+});
