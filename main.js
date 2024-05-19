@@ -2,6 +2,12 @@ const container = document.querySelector(".container");
 const grid = document.querySelector(".grid");
 const reset = document.querySelector(".reset");
 
+let color = "green";
+const erase = document.querySelector(".erase");
+erase.addEventListener("click", () => {
+    color = "white";
+})
+
 function newGrid(gridS) {
     const cellSize = 100 / gridS;
     for (let i = 0; i < gridS * gridS; i++) {
@@ -30,6 +36,6 @@ reset.addEventListener("click", () => {
 
 container.addEventListener("mouseover", (e) => {
     if (e.target.classList.contains("square")) {
-        e.target.style.backgroundColor = "black";
+        e.target.style.backgroundColor = color;
     };
 });
