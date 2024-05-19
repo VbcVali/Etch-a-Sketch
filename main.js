@@ -34,7 +34,10 @@ grid.addEventListener("click", () => {
         alert("Please enter a valid number.")
         gridSize = 16;
     }
-    newGrid(gridSize);
+
+    else {
+        newGrid(gridSize);
+    }
 });
 
 reset.addEventListener("click", () => {
